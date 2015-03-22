@@ -1,0 +1,102 @@
+#conceptContainer{border:1px solid #fff;margin:0;padding:0}
+#conceptListContainer{border:1px solid #fff;margin:0;width:100%;padding:0}/*overflow: auto;*/
+#SelectedConcContainer{padding:1em;border-top:3px solid #eee;margin-top:1em;overflow:auto;display:none}
+#ConcQuesContainer{position:absolute; top:400; height:400px;overflow: auto;}
+#getQuesForConcepts {position:relative;clear: both;margin-top:20px;}
+.conceptTable {position:relative;width:100%;border:2px solid #999;border-collapse:collapse}
+.conceptTable td {position:relative;border:1px solid #FFF}
+.conceptTable td.choice_del {border:1px solid #999;background-color:#aaa}
+.selcon{font:110% Georgia, serif;text-align:left;color:#000;}
+.selcon:hover{color:#000;cursor:pointer;border:2px solid #000;}
+.unselcon{font:110% Georgia, serif;text-align:left;color:#000;}
+.unselcon:hover{color:#000;cursor:pointer;border:2px solid #000;}
+.concept_alph {color:pink;border:1px solid pink;}
+.concept_alph:hover{border:2px solid red;color:#090;cursor:pointer}
+#errorConceptContainer{color:#f00;padding:0;}
+
+.resource_concept {float:left;clear:both;text-align:left;font-size:120%;padding:0.2em;font-family: Geneva, Tahoma, Verdana, sans-serif;color:#00a}
+.ITS_resource_box { border:2px solid #999;margin:0;padding:0.15em;overflow:auto;}
+.conceptLIST {overflow:auto;padding:0;margin:0;border-top:3px ridge #999;list-style-type:decimal;}
+span.CHOICE {
+	 float: left;
+	 width: auto;
+     border: 2px solid #aaa; 
+	 margin: 0.5em;
+	 padding: 0.25em 1em;
+	 display: inline;
+	 background: #ffd;
+	 white-space: nowrap;
+	 border-radius:10px;
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px;
+	-khtml-border-radius:10px;
+	 overflow: auto;
+}
+span.chighlight { color:blue}
+#conceptColumnContainer { width:100%;text-align: center;}
+.conceptColumn { float: center;display: inline-block;vertical-align:text-top;}
+.conceptList { border:1px solid #fff;padding:0;margin:0.5em 1em; text-align:left;list-style-type:none;padding:0 25%}
+.conceptList li {color:#666;border:1px solid #fff;padding: 0.5}
+.conceptList li:hover{border:1px dotted #ccc;color:#090;cursor:pointer}
+.conceptScore { float:right;color:#999;font-size:60% }
+.conceptCount {float:right;color:#bbb;margin-left:0.75em;color:#555;width:3em;text-align:right;border:1px solid #fff;font-family: Verdana,Arial,Helvetica,sans-serif;font-size:11pt}
+hr.concept { border:1px solid #ddd;margin:0.5em 2em }
+div.navConcept {float:left;font: 200 20px/1.5 Helvetica,Verdana,sans-serif;text-align:left;color: #666;} 
+span.navConceptInfo {float:right;border:1px solid #fff; font: Courier, monospace; } 
+
+#navcontainer2 {
+position: relative;
+margin: 0 3em 1em 3em;
+padding: 0;
+background: #fff;
+border-bottom: 1px solid #bbb;
+height:28px;
+}
+#navlist2 {
+list-style-type: none;
+text-align: center;
+position: relative;
+z-index: 2;
+padding: 0;
+height:29px;
+}
+#navlist2 li {
+display: inline;
+text-align: center;
+font-size: 90%;
+margin: 0 0.25em;
+padding: 0;
+/*font: 90% Verdana, sans-serif;*/
+}
+#navlist2 li a, #navlist2 li a:link {
+background: #fff;
+color: #777;
+text-decoration: none;
+padding: 3px 5px 3px 5px;
+outline:0;
+}
+#navlist2 li a:hover
+{
+color: #000;
+border-bottom: 3px solid #bbb;
+cursor: pointer;
+}
+#navlist2 li a#current, #navlist2 li a#current:link
+{
+color: #000;
+cursor: default;
+font-weight: bold;
+border-bottom: 3px solid #999;
+outline:0;
+}
+#navlist2 li a#current:hover
+{
+border-bottom: 3px solid #000;
+}
+/*================= DEBUG =================/
+#conceptContainer{border:3px solid brown;}
+#conceptContainer{background-color:pink}
+#SelectedConcContainer{border:2px solid blue;}
+#conceptListContainer{background-color:yellow}
+#errorConceptContainer{background-color:lightgreen;
+/*=========================================*/

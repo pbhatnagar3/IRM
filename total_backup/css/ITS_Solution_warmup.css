@@ -1,0 +1,66 @@
+
+
+TH.ITS_ANSWER_STRIPESOL {
+   text-align: left;
+	 background-color: #E0E0E0; 	/*#C0C0C0;*/
+	 vertical-align: middle;
+	 border-right: 2px solid #999;
+	border-bottom: 2px solid #999;
+	border-top: 2px solid #999;
+	border-left: 2px solid #999;
+	font-weight: normal;
+	 /*border-width: 0px;*/
+	 /*font-family: monospace;*/
+}
+
+TH.ITS_ANSWERSOL {
+   text-align: left;
+	 background-color: white; 	/*#C0C0C0;*/
+	 vertical-align: middle;
+	 border-right: 2px solid #999;
+	border-bottom: 2px solid #999;
+	border-top: 2px solid #999;
+	border-left: 2px solid #999;
+	font-weight: normal;
+	 /*border-width: 0px;*/
+	 /*font-family: monospace;*/
+}
+
+TD.solution {
+	border-right: 2px solid #999;
+	border-bottom: 2px solid #999;
+	border-top: 2px solid #999;
+	border-left: 2px solid #999;
+	padding: 2px 2px 2px 2px; 
+}
+TABLE.ITS_ANSWERSOL {
+   vertical-align: top;
+	 background-color: white; /* pink border for answer table #D0D0D0;*/
+	 margin-top: -.5cm;
+	 border-width: 0px;
+	 border-spacing: 0px;
+	 width: 100%;
+	 /*margin-bottom: -.3cm;*/
+}
+TABLE.ITS_ANSWER_STRIPESOL {
+   vertical-align: top;
+	 background-color: #E0E0E0; /* pink border for answer table #D0D0D0;*/
+	 margin-top: -.5cm;
+	 border-width: 0px;
+	 border-spacing: 0px;
+	 width: 100%;
+	 /*margin-bottom: -.3cm;*/
+}
+#solutionContainer {clear:both;position:relative;width:91.9%;text-align:left;background-color:#DCDCDC;border-bottom:1px solid #DCDCDC;background:#fff}
+#solutionContainer span{position:relative;color:#666;background-color:#fff;background:#fff;margin:0 1em;padding:0 .5em}
+#solutionContainer span:hover{color:#fff;background-color:#666;cursor:pointer}
+#results {position:relative;width:90%;text-align:center;display:none;background:#fff;margin:0;padding:1em}
+SPAN.gray{color:gray}
+#hintContainer {clear:both;position:relative;width:91.9%;text-align:left;background-color:#DCDCDC;border-bottom:1px solid #DCDCDC;background:#fff}
+#hintContainer span{position:relative;color:#666;background-color:#fff;background:#fff;margin:0 1em;padding:0 .5em}
+#hintContainer span:hover{color:#fff;background-color:#666;cursor:pointer}
+#hintResults {position:relative;width:90%;text-align:center;display:none;background:#fff;margin:0;padding:1em}
+#solContainer {clear:both;position:relative;width:91.9%;text-align:left;background-color:#DCDCDC;border-bottom:1px solid #DCDCDC;background:#fff}
+#solContainer span{position:relative;color:#666;background-color:#fff;background:#fff;margin:0 1em;padding:0 .5em}
+#solContainer span:hover{color:#fff;background-color:#666;cursor:pointer}
+#solResults {position:relative;width:90%;text-align:center;display:none;background:#fff;margin:0;padding:1em}

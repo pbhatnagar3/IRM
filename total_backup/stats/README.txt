@@ -1,0 +1,7 @@
+Overall Summary contains the majority of important figures and explanations for my data mining and graphing work.  It has a slightly outdated version of the datamining script in the file.  The only plots it is missing are the plots where the data was filtered by question type, which can be found in the final presentation.
+
+script.m  is the most up to date MATLAB datamining script.  Some sections may be commented out; this is arbitrary depending on which sections the user was last using.  Real comments are also included, but it is obvious what is a comment and what is valid (but commented out) code.
+
+refresh.php is a php page designed to refresh MinedDataV1.  It is not quite finished.  Currently, the portions that pull data out and process it based on thresholds are working, but some of the mathematical processing (e.g. averaging, removing NaN, etc.) is not done and the part that inserts the processed data into MinedDataV1 has not been written.  This will be accomplished next semester.
+
+Other things I worked on this semester that have no files:  Had to re-update tags several times using script from last semester, installed and tested jpgraph, attempted (and failed) to refresh MinedDataV1 using php to call MATLAB from command line

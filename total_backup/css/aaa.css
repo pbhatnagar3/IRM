@@ -1,0 +1,86 @@
+div#conceptColumnB { float: center;display: inline-block;vertical-align:text-top;}
+h2 {
+  font: 500 40px/1.5 Helvetica, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+ul.conceptListB {
+  list-style-type: none;
+  margin: 0;
+  padding: 2em;
+}
+ul.conceptListB li {
+  border:1px solid #fff;
+  padding: 0.5;
+  font: 200 20px/1.5 Helvetica, Verdana, sans-serif;
+  border-bottom: 1px solid #ccc;
+  text-decoration: none;
+  color: #999;
+  display: block;
+  width: 500px;
+  padding: 0.25em 0.5em;
+  -webkit-transition: font-size 0.3s ease, background-color 0.3s ease;
+  -moz-transition: font-size 0.3s ease, background-color 0.3s ease;
+  -o-transition: font-size 0.3s ease, background-color 0.3s ease;
+  -ms-transition: font-size 0.3s ease, background-color 0.3s ease;
+  transition: font-size 0.3s ease, background-color 0.3s ease;
+}
+ul.conceptListB li:hover {
+  font-size: 120%;
+  background: #fff;
+  color:#666;
+  border-radius:15px;
+	-moz-border-radius:15px;
+	-webkit-border-radius:15px;
+	-khtml-border-radius:15px;
+}
+/*-------------*/
+div#conceptColumnC {
+  margin: 20px;
+}
+ul.conceptListC {
+  list-style-type: none;
+  width: 500px;
+}
+h3 {
+  font: bold 20px/1.5 Helvetica, Verdana, sans-serif;
+}
+ul.conceptListC li img {
+  float: left;
+  margin: 0 15px 0 0;
+}
+ul.conceptListC li p {
+  font: 200 12px/1.5 Georgia, Times New Roman, serif;
+}
+ul.conceptListC li {
+  padding: 10px;
+  overflow: auto;
+}
+ul.conceptListC li:hover {
+  background: #eee;
+  cursor: pointer;
+}
+/*-------------*/
+div#conceptColumnD {
+  width: 900px;
+  margin: 0 auto;
+  overflow: auto;
+}
+ul.conceptListD {
+  list-style-type: none;
+  background: #aaa;  
+}
+ul.conceptListD li {
+  float: left;
+  margin: 10px;
+  border: 5px solid #fff;
+  -webkit-transition: box-shadow 0.5s ease;
+  -moz-transition: box-shadow 0.5s ease;
+  -o-transition: box-shadow 0.5s ease;
+  -ms-transition: box-shadow 0.5s ease;
+  transition: box-shadow 0.5s ease;
+}
+ul.conceptListD li:hover {
+  -webkit-box-shadow: 0px 0px 7px rgba(155,155,155,0.9);
+  box-shadow: 0px 0px 7px rgba(155,155,155,0.9);
+}

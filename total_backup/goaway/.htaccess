@@ -1,0 +1,21 @@
+Options +FollowSymLinks -MultiViews
+# Turn mod_rewrite on
+RewriteEngine On
+RewriteBase /
+
+# Question.php
+#RewriteRule ^question/([0-9]+)/?$ html/Question.php?qNum=$1 [L]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php?$1 [L,QSA]
+
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,}\s(.*)/index\.php [NC]
+RewriteRule ^ /%1 [R=301,L]
+
+#Suppose your url is: domain.com/article.php?name=title&page=5
+#You want to change: domain.com/articles/title/5/
+#Then write in .htaccess file:
+#RewriteRule ^articles/(A-Za-z0-9-]+)/([0-9]+)/?$ article.php?name=$1&page=$2 [L]
+
+#RewriteRule ^index.php?role=(A-Za-z0-9-]+) $1 [L]

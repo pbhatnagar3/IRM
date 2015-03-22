@@ -1,0 +1,19 @@
+.ITS_tags {float:left;border:1px outset #999;margin:0.25em;background:#FFF;}
+.ITS_tags table {border:1px solid #999;border-collapse:collapse;}
+.ITS_tags table td {padding:0.35em;}
+.ITS_tags table.add {border:1px solid red;background:#eee}
+
+.tag_add {color:#666;background:#FF9;font-weight:bold;border-left:1px solid #999}
+.tag_add:hover{cursor:pointer;color: #FFF;background:#2a2;}
+.tag_del {color:#666;background:#FF9;font-weight:bold;border-left:1px solid #999;}
+.tag_del:hover{cursor:pointer;color: #FFF;background:#e77;}
+.tag_del_DB {color:#666;background:#eee;font-weight:bold;border-left:1px solid #999}
+.tag_del_DB:hover{cursor:pointer;color: #FFF;background:#e77;}
+
+.tag_sep {margin:5px;border-top:2px solid #999}
+.tagref{color:#444;}
+.tagref:hover{color:#00f;background:#FF9;cursor:pointer;}
+.taginfo{display:none;}
+.clear{clear:both}
+
+#ITS_TAGS_LIST {border:2px solid #999;padding:0.25em;overflow:auto;text-align:center}

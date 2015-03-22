@@ -1,0 +1,32 @@
+Intelligent Review Model: Top level README
+
+Each folder, the 3 projects have there own README
+
+1. Intelligent Review Model Code /IRM Code/
+	a. ITS_table/ITS_query handle writing tables, and querying database
+	b. concept_stats - System Analysis (Paper)
+	c. user_stats - User Analysis (Paper)
+	d. crit_score - Quantifying Criticalness (Paper)
+	e. intelligent Review - Buildiing Review Trees (Paper)
+	
+Notes:
+
+	Run test.py to build table -'intelligent_review_semester_id' inputs
+	are semester id, and T. T = .5 recommended
+	
+	
+	All references to cross corrolation should be to transition 
+	potential. Notation of the paper changed and the code was not
+	updated to reflect the change in nomenclature. However, works as
+	intended. For example tcs ->tps. (Sorry - out of time)
+
+2. Intellient Review GUI /GUI/
+
+3. Intelligent Review Model Optimization /Optimization/
+
+Notes:
+	Seems to be an issue with the implementation, not producing the
+	predicted results from excel. Needs investigation. The excel model
+	is fine. Should be placed in the crit_score class (Raw data only
+	in concept_stats).
+

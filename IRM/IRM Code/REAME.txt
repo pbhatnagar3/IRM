@@ -1,0 +1,19 @@
+Setup Requirements:
+1. Python
+2. Python Package MySQL DB
+3. ITS databases
+
+To run:
+1. Open test.py, change semester string to the desired semester, set the T value to desired (.5 recommended)
+2. Ouput table is intelligent_review_ + semester_string
+For example "Fall 2013" -> intelligent_review_Fall_2013
+
+Classes versus explained math in paper:
+1. concept_stats.py is from internal analysis
+2. user_stats.py is from user analysis
+3. crit_score.py is from quantifying criticalness
+4. intelligent_review.py is from constructing review trees
+
+Notes:
+1. its_insert_file_name_her are for helper classes for DB
+2. cross_correlation and total cross_correlation should be transition potential and totel transition potential. Notation in the paper changed, classes not updated.

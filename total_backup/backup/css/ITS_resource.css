@@ -1,0 +1,28 @@
+
+font.mysql{color:green;font-weight:bold}
+div.mysql {background: #fff;border:1px solid #666;padding: 5px;margin-top:10px;}
+.dialogButton{float:right;font:8pt Georgia, serif;border:2px solid #fff;background-color:#fff;margin:0 .25em .25em 0;padding:auto .5em}
+.dialogButton:hover{cursor:pointer;color:red;border:2px solid red}
+div.spacer{float:right;font:12pt Georgia, serif;border:none;background-color:#fff;margin:.25em;padding:.2em}
+option.highlighted{color:#000}
+
+div.ITS_latex {border: 1px solid #999; padding:0.5em;overflow:auto;}
+div.fl { float:left; margin:0 0.3em;padding:0;border: 1px solid #fff;}
+table.tt {border-collapse:collapse;margin:0.2em;}
+#resourceList {position:relative;width:100%;border-bottom:2px solid #aaa;margin-top:0.5em;overflow:auto;}
+table.ITS_resource{position:relative;width:100%;vertical-align:middle;border-collapse:collapse;background:#fff;font-size:8pt;}
+table.ITS_resource td {border:none}
+img.ITS_resource_img {max-height: 250px;max-width: 200px;}
+.ITS_res {font-size:150%}
+.CPROFILE td span.ITS_List { font-size:200%}
+
+#resourceContainer {clear:both;position:relative;width:91.9%;text-align:left;background-color:#DCDCDC;border-bottom:1px solid #DCDCDC;background:#fff}
+#resourceContainer span{position:relative;color:#666;background-color:#fff;background:#fff;margin:0 1em;padding:0 .5em}
+#resourceContainer span:hover{color:#fff;background-color:#666;cursor:pointer}
+#xx{float:left;margin-top:-30px;font-size:100%}
+
+/* del below */
+.ITS_ANSWER {padding:0;margin:0}
+#navBoxContainer {padding:0;margin:0}
+input.ITS_submit {margin:0.1em}
+.CHOICE_ACTIVE {margin:0 0} 

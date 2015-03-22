@@ -1,0 +1,7 @@
+body{border:0;overflow:hidden;height:100%;max-height:100%;background-color:#fff;margin:0;padding:0}
+div.ITS_QTI{border:2px solid #666;background-color:#ff9;margin:.5em;padding:.5em}
+#importQuestionContainer{border:2px solid #666;margin-top:-10px;background:#ff9;display:none}
+#menuContainer,#scoreContainerContent{background:#fff}
+.QTI_output {margin:10%;border:3px ridge #aaa;padding:2em}
+table.QTI_many {border:3px ridge #00a;margin:0.5em 1em;padding:5px;color:#00a}
+table.QTI_many td {padding:5px;color:#00a;padding:0.5em}

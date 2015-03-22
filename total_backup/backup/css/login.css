@@ -1,0 +1,14 @@
+.error{background-color:#8B0000;color:#FFF}
+p{padding:2px}
+a{color:#000}
+table.login{border-collapse:collapse;border:3px solid #FFF;width:300px}
+tr.login{background:#DCDCDC}
+input.login{border:1px solid silver;width:150px;padding:.3em}
+input:focus,input.sffocus{background:#ffe;border-color:#666}
+div.login{text-align:center;padding:.5em 1em}
+div.login:hover{color:#000;cursor:pointer}
+div.login:focus{color:green;background:#666;cursor:pointer}
+div.login:active{color:#000;background:#FFD700;cursor:pointer}
+#footer {font-size:80%}
+div.em:hover{color:#000;border:1px solid #999;font-size:130%;margin:0.25em;padding:1em}
+td.wbot {text-align:center;padding:1em}

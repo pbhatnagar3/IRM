@@ -1,0 +1,18 @@
+#--- Load tables: SPFindex, SPFindex_tags
+mysql -u root -D its -p < /var/www/ITS-GT/SQL/new/table_index.sql
+
+#--- Update table with script
+http://localhost/ITS-GT/admin/update_concept.php
+
+SPF tables created in MATLAB:
+/root/user/matlab/SPF-cloud
+
+mysql -u root -D its -p < /var/www/ITS-GT/SQL/new/table_questions_tags.sql
+
+
+------------------------------------------
+CSS
+------------------------------------------
+INDEX:
+ul.nav
+ul.nav li

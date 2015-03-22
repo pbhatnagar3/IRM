@@ -1,0 +1,163 @@
+<html>
+    <head>
+        <title>SQL QUESTION TABLES</title>
+        <link rel="stylesheet" href="../css/docs.css" type="text/css" media="screen">
+    </head>
+    <body>
+		<h3><a href="../../screen.php">ITS</a> &ndash; <a href="../index.html">Documentation</a> &ndash; TABLES</h3>
+        <!-- courses -->
+    <h3 class="sql">courses <span class="g"> &mdash; list of courses</span></h3>
+    <table class="sql">
+        <tr><th>id <sup class="key">PK</sup></th><th>name</th><th>term</th><th>year</th><th>filename</th></tr>
+        <tr><td>1</td><td>ECE 2025</td><td>Fall</td><td>2009</td><td>ece2025.csv</td></tr>
+    </table>
+        <!-- courses[courses_id]_users -->
+    <h3 class="sql">courses[<span class="g">courses_id</span>]_users <span class="g"> &mdash; list of participants in a course</span></h3>
+    <table class="sql">
+        <tr><th>id <sup class="key">PK</sup></th><th>first_name</th><th>last_name</th><th>username <sup class="key">UK</sup></th><th>password</th><th>role</th></tr>
+        <tr><td>1</td><td>John</td><td>Smith</td><td>js34</td><td>myPass</td><td>[ admin | instructor | student ]</td></tr>
+    </table>
+    <ul class="key">
+		<li>courses_id &rarr; courses.id</li>
+    </ul>      
+        <!-- courses[courses_id]_users[users_id]_log -->
+    <h3 class="sql">courses[<span class="g">courses_id</span>]_users[<span class="g">users_id</span>]_log <span class="g"> &mdash; log of course participant's activity</span></h3>
+    <table class="sql">
+        <tr><th>id <sup class="key">PK</sup></th><th>questions_id <sup class="key">FK</sup></th><th>concepts_id <sup class="key">FK</sup></th><th>current_chapter</th><th>answered</th><th>score</th><th>rating</th><th>comment</th><th>timestamp</th><th>duration</th><th>action</th></tr>
+        <tr><td>1</td><td>17</td><td>63</td><td>4</td><td>D</td><td>[0-100]</td><td>[1-5]</td><td></td><td><i>unixtime</i></td><td>78</td><td>SUBMIT</td></tr>
+    </table>
+    <ul class="key">
+		<li>questions_id &rarr; questions.id</li>
+		<li>concepts_id &rarr; concepts.id</li>
+    </ul>          
+        <!-- questions -->
+    <h3 class="sql">questions <span class="g"> &mdash; question list</span></h3>
+    <table class="sql">
+        <tr><th>id <sup class="key">PK</sup></th><th>qtype</th><th>title</th><th>images_id <sup class="key">FK</sup></th><th>question</th><th>answers</th><th>answersConfig</th><th>questionConfig</th><th>category</th></tr>
+        <tr><td>1</td><td>MC</td><td>My multiple choice</td><td>1123</td><td>What is sin(t)?</td><td>4</td><td>[1|2]</td><td>[1|2]</td><td>Chapter1</td></tr>
+    </table>
+    <ul class="key">
+		<li>images_id &rarr; images.id</li>
+    </ul>
+        <!-- questions_mc -->
+    <h3 class="sql">questions_mc <span class="g"> &mdash; question extension list of type "multiple-choice"</span></h3>
+    <table class="sql">
+        <tr><th>questions_id <sup class="key">FK</sup></th><th>feedback</th><th>weight<span class="var">[i]</span></th><th>answer<span class="var">[i]</span></th><th>reason<span class="var">[i]</span></th><th>image<span class="var">[i]</span> <sup class="key">FK</sup></th></tr>
+        <tr><td>1</td><td>Hint: Consider using Euler</td><td>[0-100]</td><td>x[n]=&delta;[n]</td><td>since x[0] = 0</td><td>77</td></tr>
+    </table>
+    <ul class="key">
+		<li>questions_id &rarr; questions.id</li>		
+		<li>image[i] &rarr; images.id</li>
+    </ul>    
+    <h3 class="sql">questions_m <span class="g"> &mdash; question extension list of type "matching"</span></h3>
+    <table class="sql">
+        <tr><th>questions_id <sup class="key">FK</sup></th><th>L<span class="var">[i]</span></th><th>Limage<span class="var">[i]</span> <sup class="key">FK</sup></th><th>R<span class="var">[i]</span></th><th>Rimage<span class="var">[i]</span> <sup class="key">FK</sup></th></tr>
+        <tr><td>1</td><td>sin(&theta;)</td><td>234</td><td>cos(&theta; - &pi;/2)</td><td>235</td></tr>
+    </table>
+    <ul class="key">
+		<li>questions_id &rarr; questions.id</li>				
+		<li>Limage[i] &rarr; images.id</li>
+		<li>Rimage[i] &rarr; images.id</li>		
+    </ul>     
+        <!-- questions_c -->
+    <h3 class="sql">questions_c <span class="g"> &mdash; question extension list of type "computed"</span></h3>
+    <table class="sql">
+        <tr><th>questions_id <sup class="key">FK</sup></th><th>formula<span class="var">[k]</span></th><th>weight<span class="var">[k]</span></th><th>text<span class="var">[k]</span></th><th>val<span class="var">[i]</span></th><th>min_val<span class="var">[i]</span></th><th>max_val<span class="var">[i]</span></th><th>vals</th></tr>
+        <tr><td>1</td><td>2*{a}+1</td><td>50</td><td>Part 1:</td><td>{a}</td><td>1</td><td>5</td><td>1</td></tr>
+    </table>
+    <ul class="key">
+		<li>questions_id &rarr; questions.id</li>					
+    </ul>
+        <!-- questions_p -->
+    <h3 class="sql">questions_p <span class="g"> &mdash; question extension list of type "paragraph"</span></h3>
+    <table class="sql">
+        <tr><th>questions_id <sup class="key">FK</sup></th><th>template</th><th>answer</th></tr>
+        <tr><td>1</td><td>What is aliasing?</td><td>Aliasing is ...</td></tr>
+    </table>
+    <ul class="key">
+		<li>questions_id &rarr; questions.id</li>					
+    </ul>
+        <!-- questions_s -->
+    <h3 class="sql">questions_s <span class="g"> &mdash; question extension list of type "short answer"</span></h3>
+    <table class="sql">
+        <tr><th>questions_id <sup class="key">FK</sup></th><th>ans<span class="var">[k]</span></th></tr>
+        <tr><td>1</td><td>sin(t)</td></tr>
+    </table>
+    <ul class="key">
+		<li>questions_id &rarr; questions.id</li>					
+    </ul>           
+        <!-- solutions -->
+    <h3 class="sql">solutions <span class="g"> &mdash; list of solutions to questions</span></h3>
+    <table class="sql">
+        <tr><th>id <sup class="key">PK</sup></th><th>questions_id <sup class="key">FK</sup></th><th>solution<span class="var">[k]</span></th><th>author <sup class="key">FK</sup></th><th>verified</th><th>verified_by <sup class="key">FK</sup></th><th>rating<span class="var">[k]</span></th><th>numratings<span class="var">[k]</span></th></tr>
+        <tr><td>1</td><td>17</td><td>Hint k</td><td>1638</td><td>[0|1]</td><td>1</td><td>[1-5]</td><td>3</td></tr>
+    </table>
+    <ul class="key">
+		<li>questions_id &rarr; questions.id</li>
+		<li>author &rarr; users.id</li>
+		<li>verified_by &rarr; users.id</li>
+    </ul>
+    <ul class="list">
+		<li>solution1: hint</li>
+		<li>solution2: short solution</li>
+	    <li>solution3: detailed solution</li>
+    </ul>  
+        <!-- images -->
+    <h3 class="sql">images <span class="g"> &mdash; list of images</span></h3>
+    <table class="sql">
+        <tr><th>id <sup class="key">PK</sup></th><th>name <sup class="key">UK</sup></th><th>concepts_id <sup class="key">FK</sup></th></tr>
+        <tr><td>1</td><td>fir.png</td><td>12</td></tr>
+    </table>
+    <ul class="key">
+		<li>concepts_id &rarr; concepts.id</li>
+    </ul>    
+        <!-- concepts -->
+    <h3 class="sql">concepts <span class="g"> &mdash; list of concepts</span></h3>
+    <table class="sql">
+        <tr><th>id <sup class="key">PK</sup></th><th>name <sup class="key">UK</sup></th><th>node_number</th><th>equation</th></tr>
+        <tr><td>1</td><td>convolution</td><td>4</td><td>$$x(t) \ast y(t)$$</td></tr>
+    </table>
+    <ul class="key">
+		<li>concepts_id &rarr; concepts.id</li>
+    </ul>     
+        <!-- tags -->
+    <h3 class="sql">tags <span class="g"> &mdash; list of tags</span></h3>
+    <table class="sql">
+        <tr><th>id <sup class="key">PK</sup></th><th>name <sup class="key">UK</sup></th><th>concepts_id <sup class="key">FK</sup></th></tr>
+        <tr><td>1</td><td>sinc</td><td>12</td></tr>
+    </table>
+    <ul class="key">
+		<li>concepts_id &rarr; concepts.id</li>
+    </ul>
+        <!-- questions_tags -->
+    <h3 class="sql">questions_tags <span class="g"> &mdash; linking of questions and tags</span></h3>
+    <table class="sql">
+        <tr><th>questions_id <sup class="key">FK</sup></th><th>tags_id <sup class="key">FK</sup></th></tr>
+        <tr><td>1</td><td>57</td></tr>
+    </table>
+    <ul class="key">
+		<li>questions_id &rarr; questions.id</li>
+		<li>tags_id &rarr; tags.id</li>
+    </ul>                 
+        <!-- modules -->
+    <h3 class="sql">modules <span class="g"> &mdash; list of system modules</span></h3>
+    <table class="sql">
+        <tr><th>id <sup class="key">PK</sup></th><th>name <sup class="key">UK</sup></th><th>concepts_id <sup class="key">FK</sup></th></tr>
+        <tr><td>1</td><td>Chapter 1</td><td>12</td></tr>
+    </table>
+    <ul class="key">
+		<li>concepts_id &rarr; concepts.id</li>
+    </ul>    
+        <!-- logs -->
+    <h3 class="sql">logs <span class="g"> &mdash; log of system activity</span></h3>
+    <table class="sql">
+        <tr><th>id <sup class="key">PK</sup></th><th>questions_id <sup class="key">FK</sup></th><th>tbname</th><th>field</th><th>content</th><th>author <sup class="key">FK</sup></th><th>timestamp</th><th>action</th></tr>
+        <tr><td>1</td><td>17</td><td>questions</td><td>answer1</td><td>x=1</td><td>1638</td><td><i>unixtime</i></td><td>EDIT</td></tr>
+    </table>
+    <ul class="key">
+		<li>questions_id &rarr; questions.id</li>
+		<li>author &rarr; users.id</li>
+    </ul>        
+    <p>
+</body>
+</html>
